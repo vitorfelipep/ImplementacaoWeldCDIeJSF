@@ -8,8 +8,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </h:head>
 <h:body>
-	<h:outputText value="Valor total: #{meuBean.preco}" />
-	<br/>
-	<h:outputText value="Valor total: #{meuBean.preco}" />
+	
+	<h:form>
+		<p:inputText value="#{envioMensagemBean.texto}"/>
+		<p:commandButton value="Enviar Mensagem" action="#{envioMensagemBean.enviarMensagem}"/>
+	</h:form>
+	
 </h:body>
 </html>
